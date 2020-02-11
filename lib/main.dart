@@ -10,36 +10,25 @@ class MiCard extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.black,
         body: SafeArea(
-          child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Container(
-                  width: 100.0,
-                  color: Colors.black,
-                ),
-                Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Container(
-                        height: 100.0,
-                        width: 100.0,
-                        color: Colors.lightGreenAccent,
-                      ),
-                      Container(
-                        height: 100.0,
-                        width: 100.0,
-                        color: Colors.yellowAccent,
-                      )
-                    ]),
-                Container(
-                  width: 100.0,
-                  color: Colors.red,
-                ),
-              ]),
-        ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              backgroundColor: Colors.black,
+              backgroundImage: AssetImage('images/profile.jpeg'),
+            ),
+            Text(
+              'Edilson',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold),
+            ),
+          ],
+        )),
       ),
     );
   }
