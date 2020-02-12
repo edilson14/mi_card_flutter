@@ -13,10 +13,9 @@ class MiCard extends StatelessWidget {
         backgroundColor: Colors.white,
         body: SafeArea(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
-              radius: 50.0,
+              radius: 46.0,
               backgroundColor: Colors.red,
               backgroundImage: AssetImage('images/profile.jpeg'),
             ),
@@ -35,7 +34,7 @@ class MiCard extends StatelessWidget {
               style: TextStyle(
                 color: Colors.black,
                 fontFamily: 'SourceSansPro',
-                fontSize: 20.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -44,10 +43,56 @@ class MiCard extends StatelessWidget {
               style: TextStyle(
                 color: Colors.blueAccent,
                 fontFamily: 'Source Sans Pro',
-                fontSize: 10.0,
+                fontSize: 15.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Container(
+              color: Colors.black54,
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.phone_android,
+                    size: 20,
+                    color: Colors.black,
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  Text(
+                    '+55 (85) 99754-5369',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.black54,
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.email,
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  Text(
+                    'edytavares66@gmail.com',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'Source Sans Pro',
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         )),
       ),
