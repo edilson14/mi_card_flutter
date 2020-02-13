@@ -48,63 +48,52 @@ class MiCard extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.fromLTRB(50, 10, 50, 0),
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        FontAwesomeIcons.whatsapp,
-                        size: 20,
-                        color: Colors.green,
-                      ),
-                      SizedBox(
-                        width: 20.0,
-                      ),
-                      Text(
-                        '+55 (85) 99754-5369',
-                        style: TextStyle(
-                          fontFamily: 'Source Sans Pro',
-                          fontWeight: FontWeight.bold,
-                          color: Colors.green,
-                        ),
-                      ),
-                    ],
-                  ),
+              SizedBox(
+                width: 250.0,
+                child: Divider(
+                  color: Colors.white,
                 ),
               ),
               Card(
-                margin: EdgeInsets.fromLTRB(50, 10, 50, 0),
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        FontAwesomeIcons.envelope,
-                        size: 20,
-                        color: Colors.red,
-                      ),
-                      SizedBox(
-                        width: 20.0,
-                      ),
-                      Text(
-                        'edytavares66@gmail.com',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontFamily: 'Source Sans Pro',
-                          fontWeight: FontWeight.bold,
-                        ),
-                      )
-                    ],
+                margin: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
+                child: ListTile(
+                  leading: Icon(
+                    FontAwesomeIcons.whatsapp,
+                    color: Colors.green,
                   ),
+                  title: Text(
+                    '+55 (85) 99754-5369',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green,
+                      fontSize: 20,
+                    ),
+                  ),
+                  dense: true,
                 ),
               ),
               Card(
-                margin: EdgeInsets.fromLTRB(50, 10, 50, 0),
+                margin: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
+                child: ListTile(
+                  leading: Icon(
+                    FontAwesomeIcons.envelope,
+                    color: Colors.red,
+                  ),
+                  title: Text(
+                    'edytavares66@gmail.com',
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontFamily: 'Source Sans Pro',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                    ),
+                  ),
+                  dense: true,
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
                 child: Padding(
                   padding: EdgeInsets.all(10),
                   child: Row(
@@ -112,13 +101,6 @@ class MiCard extends StatelessWidget {
                     children: <Widget>[
                       Icon(
                         FontAwesomeIcons.githubSquare,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Icon(
-                        FontAwesomeIcons.linkedin,
-                        color: Colors.blue,
                       ),
                       SizedBox(
                         width: 20.0,
@@ -142,21 +124,14 @@ class MiCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        FontAwesomeIcons.twitter,
+                        FontAwesomeIcons.linkedin,
                         color: Colors.blue,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Icon(
-                        FontAwesomeIcons.instagram,
-                        color: Color.fromRGBO(255, 0, 0, 1),
                       ),
                       SizedBox(
                         width: 20.0,
                       ),
                       Text(
-                        '_edilson14',
+                        'edilson14',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontFamily: 'Source Sans Pro',
