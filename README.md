@@ -1,4 +1,4 @@
-![App Brewery Banner](https://github.com/edilson14/mi_card_flutter/blob/master/images/app.png)
+![App Print Screen](https://github.com/edilson14/mi_card_flutter/blob/master/images/app.png)
 
 # Mi Card
 
