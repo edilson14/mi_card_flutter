@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import './widget/contact.dart';
+
 void main() {
   runApp(MiCard());
 }
@@ -54,80 +56,28 @@ class MiCard extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              Card(
-                margin: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
-                child: ListTile(
-                  leading: Icon(
-                    FontAwesomeIcons.whatsapp,
-                    color: Colors.green,
-                  ),
-                  title: Text(
-                    '+55 (85) 99754-5369',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green,
-                      fontSize: 15.0,
-                    ),
-                  ),
-                  dense: true,
-                ),
+              Contact(
+                context: context,
+                icone: FontAwesomeIcons.whatsapp,
+                title: '+55 (85) 9 9754-5369',
+                color: Colors.green,
               ),
-              Card(
-                margin: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
-                child: ListTile(
-                  leading: Icon(
-                    FontAwesomeIcons.envelope,
-                    color: Colors.red,
-                  ),
-                  title: Text(
-                    'edytavares66@gmail.com',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontFamily: 'Source Sans Pro',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                    ),
-                  ),
-                  dense: true,
-                ),
+              Contact(
+                context: context,
+                title: 'edytavares66@gmail.com',
+                icone: FontAwesomeIcons.envelope,
+                color: Colors.red,
               ),
-              Card(
-                margin: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
-                child: ListTile(
-                  dense: true,
-                  leading: Icon(
-                    FontAwesomeIcons.githubSquare,
-                    color: Colors.black,
-                  ),
-                  title: Text(
-                    'edilson14',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15.0,
-                    ),
-                  ),
-//                  dense: true,
-                ),
+              Contact(
+                context: context,
+                title: 'edilson14',
+                icone: FontAwesomeIcons.github,
               ),
-              Card(
-                margin: EdgeInsets.fromLTRB(50, 10, 50, 0),
-                child: ListTile(
-                  dense: true,
-                  leading: Icon(
-                    FontAwesomeIcons.linkedin,
-                    color: Colors.blue,
-                  ),
-                  title: Text(
-                    'edilson14',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 15.0,
-                    ),
-                  ),
-                ),
+              Contact(
+                context: context,
+                title: 'edilson14',
+                icone: FontAwesomeIcons.linkedin,
+                color: Colors.blue,
               ),
             ],
           ),
