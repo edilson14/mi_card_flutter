@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../widget/contact.dart';
+import '../widget/skills.dart';
 
 class MiCard extends StatelessWidget {
   @override
@@ -18,24 +19,13 @@ class MiCard extends StatelessWidget {
                 radius: 46.0,
                 backgroundImage: AssetImage('images/profile.jpeg'),
               ),
-              Text(
-                'Edilson',
-                style: TextStyle(
-                  color: Theme.of(context).primaryColor,
-                  fontSize: 40.0,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Source Sans Pro',
-                  letterSpacing: 2.0,
-                ),
-              ),
-              Text(
-                'Mobile && Web Developer',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Source Sans Pro',
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                ),
+              Skills(
+                context: context,
+                title: 'Edilson',
+                titleFontSize: 40.0,
+                subTitle: 'Mobile && Web Developer',
+                subTitleFontColor: Colors.white,
+                subTitleFontSize: 20,
               ),
               Text(
                 'Learning Dart/Flutter',
@@ -49,7 +39,8 @@ class MiCard extends StatelessWidget {
               SizedBox(
                 width: 250.0,
                 child: Divider(
-                  color: Colors.white,
+                  thickness: 2,
+                  color: Colors.red,
                 ),
               ),
               Contact(
