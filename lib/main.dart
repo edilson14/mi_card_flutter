@@ -67,7 +67,7 @@ class MiCard extends StatelessWidget {
                       fontFamily: 'Source Sans Pro',
                       fontWeight: FontWeight.bold,
                       color: Colors.green,
-                      fontSize: 20,
+                      fontSize: 15.0,
                     ),
                   ),
                   dense: true,
@@ -95,6 +95,7 @@ class MiCard extends StatelessWidget {
               Card(
                 margin: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
                 child: ListTile(
+                  dense: true,
                   leading: Icon(
                     FontAwesomeIcons.githubSquare,
                     color: Colors.black,
@@ -104,26 +105,29 @@ class MiCard extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Source Sans Pro',
                       fontWeight: FontWeight.bold,
+                      fontSize: 15.0,
                     ),
                   ),
-                  dense: true,
+//                  dense: true,
                 ),
               ),
               Card(
                 margin: EdgeInsets.fromLTRB(50, 10, 50, 0),
                 child: ListTile(
-                    // padding: EdgeInsets.all(10),
-                    leading: Icon(
-                      FontAwesomeIcons.linkedin,
-                      color: Colors.blue,
+                  dense: true,
+                  leading: Icon(
+                    FontAwesomeIcons.linkedin,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    'edilson14',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 15.0,
                     ),
-                    title: Text(
-                      'edilson14',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Source Sans Pro',
-                      ),
-                    )),
+                  ),
+                ),
               ),
             ],
           ),

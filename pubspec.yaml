@@ -24,7 +24,6 @@ flutter:
 
   assets:
     - images/
-
   fonts:
   - family: Source Sans Pro
     fonts:
